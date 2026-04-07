@@ -1,0 +1,144 @@
+/* estilo.css */
+
+/* Fundo geral da página */
+body {
+    background-color: #00171f; /* Fundo super escuro */
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Container principal - centraliza o card na tela */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    max-width: 100% !important; /* Sobrescreve o max-width do Bootstrap */
+}
+
+/* Estrutura do Card */
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: #003459; /* Azul escuro principal */
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    width: 100%;
+    border: none; /* Remove a borda padrão do Bootstrap */
+}
+
+/* Imagem da Estação */
+.card img {
+    width: 50%;
+    object-fit: cover;
+    background-color: #ffffff; /* Fundo branco caso a imagem não carregue rápido */
+}
+
+/* Área do Formulário */
+.formulario {
+    width: 50%;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff; /* Texto em branco */
+}
+
+/* Título */
+.formulario h2 {
+    color: #00a8e8; /* Azul claro (Cyan) para destaque */
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.formulario label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+/* Campos de Input */
+.input {
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    background-color: #00171f; /* Fundo do input mais escuro */
+    border: 2px solid #007ea7; /* Borda azul média */
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Efeito de Foco (quando o usuário clica no input) */
+.input:focus {
+    border-color: #00a8e8;
+    box-shadow: 0 0 8px rgba(0, 168, 232, 0.4);
+}
+
+/* Botão de Login */
+.botao {
+    padding: 14px;
+    background-color: #007ea7; /* Azul médio */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+/* Efeito Hover do Botão */
+.botao:hover {
+    background-color: #00a8e8; /* Fica mais claro ao passar o mouse */
+}
+
+.botao:active {
+    transform: scale(0.98); /* Efeito de "clique" */
+}
+
+/* Link de Cadastro */
+.formulario a {
+    margin-top: 25px;
+    text-align: center;
+    color: #00a8e8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.formulario a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Responsividade: Telas menores (Mobile) */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 40px 20px;
+    }
+}
