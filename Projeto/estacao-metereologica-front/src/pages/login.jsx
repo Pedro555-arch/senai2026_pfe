@@ -21,9 +21,9 @@ export default function Login(){
 
                         <label htmlFor="senha">Senha</label>
                         <input type="password" id="senha" className="input" value={senha} onChange={(e) => setSenha(e.target.value)}/>
-                        <button className="botao">Login</button>
+                        <Link to='/dashboard' className="botao">Login</Link>
                     </form>
-                    <Link to='/'>Não tem conta? Cadastre-se</Link>
+                    <Link to='/registro'>Não tem conta? Cadastre-se</Link>
                 </div>
             </div>
         </section>

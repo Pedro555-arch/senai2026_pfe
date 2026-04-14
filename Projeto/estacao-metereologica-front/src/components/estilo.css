@@ -142,3 +142,82 @@ body {
         padding: 40px 20px;
     }
 }
+
+/* ========================================= */
+/* ESTILOS DO HEADER             */
+/* ========================================= */
+
+header {
+    background-color: #003459; /* Mesmo azul escuro do card para manter o padrão */
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between; /* Título de um lado, menu do outro */
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Sombra suave embaixo */
+}
+
+/* Título do Header */
+header h2 {
+    color: #00a8e8;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* Lista de navegação */
+header nav ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    display: flex;
+    gap: 30px; /* Espaço entre os links */
+    margin: 0;
+    padding: 0;
+}
+
+/* Links do Header (tags <a> geradas pelo <Link> do React Router) */
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse nos links */
+header nav ul li a:hover {
+    color: #00a8e8;
+    background-color: rgba(0, 168, 232, 0.1); /* Fundo sutil azulado */
+}
+
+/* Responsividade do Header: Telas menores (Mobile) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Empilha o título e o menu */
+        gap: 20px;
+        padding: 20px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap; /* Permite que os links quebrem linha se necessário */
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.dashboard-content {
+    padding: 40px 50px;
+    color: #ffffff;
+    flex: 1; /* Faz o conteúdo ocupar o resto da tela */
+}
+
+.dashboard-content h1 {
+    color: #00a8e8;
+    margin-bottom: 20px;
+}
