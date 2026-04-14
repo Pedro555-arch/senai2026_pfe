@@ -1,14 +1,12 @@
 .main-content {
   display: grid;
-  /* Define 3 partes para a esquerda e um tamanho fixo de 320px para a direita */
-  grid-template-columns: 3fr 320px; 
+  grid-template-columns: 3fr 320px; /* Define largura fixa para a direita */
   gap: 24px;
   max-width: 1128px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Garante que em telas menores a coluna da direita desça e ocupe tudo */
 @media (max-width: 992px) {
   .main-content {
     grid-template-columns: 1fr;
