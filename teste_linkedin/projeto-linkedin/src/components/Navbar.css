@@ -1,0 +1,99 @@
+/* Container principal da barra */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d2226; /* Cor escura do cabeçalho do LinkedIn */
+  height: 52px;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #38434f;
+  gap: 120px; /* Espaço entre a esquerda (pesquisa) e a direita (ícones) */
+}
+
+/* Lado Esquerdo (Logo e Pesquisa) */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  background-color: #0077b5; /* O azul clássico do LinkedIn */
+  color: white; /* O texto "in" fica branco */
+  font-size: 22px; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+  font-family: sans-serif; /* Fonte simples */
+  border-radius: 3px; /* Cantos levemente arredondados */
+  width: 34px; /* Largura do quadrado */
+  height: 34px; /* Altura do quadrado */
+  display: flex; /* Para centralizar o texto */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  cursor: pointer;
+  padding-bottom: 2px; 
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #38434f;
+  border-radius: 4px;
+  padding: 0 8px;
+  height: 34px;
+}
+
+.search-box input {
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  width: 240px;
+  margin-left: 5px;
+}
+
+.search-box input::placeholder {
+  color: #9facbd;
+}
+
+/* Lado Direito (Menu de Ícones) */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 30px; 
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #9facbd; /* Cor cinza do texto inativo */
+  font-size: 12px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-item:hover {
+  color: white; /* Fica branco ao passar o mouse */
+}
+
+.nav-item span {
+  margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    gap: 20px; /* Diminui o espaço gigante do meio */
+    justify-content: space-between;
+  }
+  
+  .search-box input {
+    width: 120px; /* Encolhe a barra de pesquisa */
+  }
+  
+  .nav-item span {
+    display: none; /* Esconde os textos "Início", "Vagas", etc. Deixa só os ícones! */
+  }
+}

@@ -1,0 +1,78 @@
+.suggestions-section {
+  background-color: #1d2226;
+  border-radius: 8px;
+  border: 1px solid #38434f;
+  padding: 16px;
+  margin-top: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.suggestions-section h2 {
+  font-size: 14px; /* Tamanho ideal para não quebrar em telas menores */
+  color: white;
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 0.2px;
+  line-height: 1.2;
+}
+
+.suggestion-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #38434f;
+}
+
+.suggestion-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.suggestion-header {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.suggestion-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #38434f;
+  flex-shrink: 0;
+}
+
+.suggestion-info h3 {
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+  margin: 0;
+}
+
+.suggestion-info p {
+  font-size: 12px;
+  color: #9facbd;
+  margin: 4px 0 0 0;
+  line-height: 1.3;
+}
+
+.connect-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 6px 0;
+  font-weight: 600;
+  font-size: 14px;
+  width: 100%; /* Faz o botão esticar em toda a largura da caixa */
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.connect-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

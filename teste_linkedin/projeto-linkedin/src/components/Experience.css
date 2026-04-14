@@ -1,0 +1,86 @@
+.experience-section {
+  background-color: #1d2226;
+  border-radius: 8px;
+  border: 1px solid #38434f;
+  padding: 24px;
+}
+
+.experience-section h2 {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.experience-item {
+  display: flex;
+  gap: 16px;
+}
+
+.company-logo {
+  width: 48px;
+  height: 48px;
+  background-color: #70b5f9; /* Cor provisória para a logo da empresa */
+  border-radius: 4px;
+}
+
+.experience-details h3 {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+
+.company-duration {
+  font-size: 14px;
+  color: #9facbd;
+  margin-bottom: 12px;
+}
+
+/* --- Magia da Linha do Tempo --- */
+.role-timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.role {
+  position: relative;
+  padding-left: 24px; /* Empurra o texto para o lado para caber a linha */
+  padding-bottom: 16px; /* Espaço entre um cargo e outro */
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 6px; /* Alinha a bolinha com a primeira linha do texto */
+  width: 8px;
+  height: 8px;
+  background-color: #9facbd;
+  border-radius: 50%;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 3px; /* Centraliza a linha embaixo da bolinha de 8px */
+  top: 14px; /* Começa logo abaixo da bolinha */
+  bottom: 0; /* Vai até o final do container do cargo */
+  width: 2px;
+  background-color: #38434f;
+}
+/* -------------------------------- */
+
+.role h4 {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+
+.role-type {
+  font-size: 14px;
+  color: white;
+  margin-top: 2px;
+}
+
+.role-duration, .role-location {
+  font-size: 14px;
+  color: #9facbd;
+  margin-top: 2px;
+}

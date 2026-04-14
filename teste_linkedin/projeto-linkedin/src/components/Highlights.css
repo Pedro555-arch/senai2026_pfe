@@ -1,0 +1,71 @@
+.highlights-section {
+  background-color: #1d2226;
+  border-radius: 8px;
+  border: 1px solid #38434f;
+  padding: 24px;
+}
+
+.highlights-section h2 {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 16px;
+}
+
+/* Container que coloca os 3 cartões lado a lado */
+.highlights-grid {
+  display: flex;
+  gap: 16px;
+}
+
+/* O cartão individual */
+.highlight-card {
+  flex: 1; /* Faz os 3 cartões dividirem o espaço igualmente */
+  border: 1px solid #38434f;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Garante que nada vaze das bordas arredondadas */
+}
+
+.card-header {
+  padding: 12px;
+  border-bottom: 1px solid #38434f;
+}
+
+.card-header span {
+  font-size: 12px;
+  color: #9facbd;
+}
+
+.card-header p {
+  font-size: 14px;
+  color: white;
+  margin-top: 4px;
+}
+
+/* Esse é o quadrado onde depois você pode colocar imagens reais */
+.card-image-placeholder {
+  height: 140px;
+  background-color: #283038;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9facbd;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card-footer {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #9facbd;
+}
+/* Quando a tela for do tamanho de um celular */
+@media (max-width: 768px) {
+  .highlights-grid {
+    /* Coloca os 3 cartões um embaixo do outro, em vez de lado a lado */
+    flex-direction: column; 
+  }
+}
